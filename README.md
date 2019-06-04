@@ -6,7 +6,7 @@
 
 Small potable bits manipulation in C.
 
-use an array of `uint8_t`,`uint16_t`or`uint32_t` as underlying data-type utilizing all bits in each word.
+use an array of `uint8_t`,`uint16_t`or`uint32_t`as underlying data-type utilizing all bits in each word.
 
 ### Current status 
 
@@ -59,8 +59,8 @@ void citinUnit(cit Getit, unsigned int index, CIT_UNIT compound);
 Set `CIT_WORD_SIZE`in`citset.h`to {1, 2, 4} to determine the size of WORD_SIZE you use.
 
 ### Examples 
-- See [v0.4/tests](https://github.com/include-yy/citset/tree/master/v0.4/tests)for some examples.
-- See [Example](https://github.com/include-yy/citset/tree/master/Example)for an example of how to calculate prime numbers by using sieve of Eratosthenes.
+- See [v0.4/tests](https://github.com/include-yy/citset/tree/master/v0.4/tests) for some examples.
+- See [Example](https://github.com/include-yy/citset/tree/master/Example) for an example of how to calculate prime numbers by using sieve of Eratosthenes.
 
 ### More Information
 - To get more information about how to use this little library and more details, read the [tutorial](https://github.com/include-yy/citset/blob/master/tutorial.md)
