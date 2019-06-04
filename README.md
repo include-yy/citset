@@ -16,7 +16,7 @@ Basic operation, such as get the value of one bit, modify the value of one bit a
 The main design goal of this small library is to be small, correct, self contained. Clarity of the code is highly valued.
 
 ### Notable features and omissions
-- the biggest number of bits you can get at a time is 4294967295(0XFFFFFFFF), delimited by the max value of unsinged int.
+- the biggest number of bits you can get at a time is 4294967295(0XFFFFFFFF), delimited by the max value of unsigned int.
 - it is mostly functional.
 
 ### API
