@@ -8,6 +8,8 @@
 
 typedef CIT_UNIT* cit_unit_ptr;
 
+//trial function: cit_unit_get
+
 static unsigned int
 cit_unit_get (cit_unit_ptr p, unsigned int index)
 {
