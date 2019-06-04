@@ -3,6 +3,7 @@
 //Here, I try 8, 16 and 32, they all work well. */
 #define UNITBITS 8
 
+//trial function: cit_tell
 static unsigned int cit_place[2];
 
 static void
