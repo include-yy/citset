@@ -4,7 +4,7 @@
 
 typedef unsigned char* cit_unit_ptr;
 
-//trial function
+//trial function: cit_zerone
 static void
 cit_zerone (cit_unit_ptr p, unsigned int n, int signal)
 {
