@@ -16,7 +16,7 @@ Basic operation, such as get the value of one bit, modify the value of one bit a
 The main design goal of this small library is to be small, correct, self contained. Clarity of the code is highly valued.
 
 ### Notable features and omissions
-- the biggest number of bits you can get at one time is 4294967295(0XFFFFFFFF), delimited by the max value of unsinged int.
+- the biggest number of bits you can get at a time is 4294967295(0XFFFFFFFF), delimited by the max value of unsinged int.
 - it is mostly functional.
 
 ### API
@@ -59,7 +59,7 @@ void citinUnit(cit Getit, unsigned int index, CIT_UNIT compound);
 Set `CIT_WORD_SIZE`in`citset.h`to {1, 2, 4} to determine the size of WORD_SIZE you use.
 
 ### Examples 
-- See `[v0.4/tests](https://github.com/include-yy/citset/tree/master/v0.4/tests)`for some examples.
+- See [v0.4/tests](https://github.com/include-yy/citset/tree/master/v0.4/tests)for some examples.
 - See `Example` for an example of how to calculate prime numbers by using sieve of Eratosthenes.
 
 ### More Information
