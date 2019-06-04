@@ -60,7 +60,7 @@ Set `CIT_WORD_SIZE`in`citset.h`to {1, 2, 4} to determine the size of WORD_SIZE y
 
 ### Examples 
 - See [v0.4/tests](https://github.com/include-yy/citset/tree/master/v0.4/tests)for some examples.
-- See `Example` for an example of how to calculate prime numbers by using sieve of Eratosthenes.
+- See [Example](https://github.com/include-yy/citset/tree/master/Example)for an example of how to calculate prime numbers by using sieve of Eratosthenes.
 
 ### More Information
 - To get more information about how to use this little library and more details, read the [tutorial](https://github.com/include-yy/citset/blob/master/tutorial.md)
