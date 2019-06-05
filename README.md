@@ -6,7 +6,7 @@
 
 Small potable bits manipulation in C.
 
-use an array of `uint8_t`,`uint16_t`or`uint32_t`as underlying data-type utilizing all bits in each word.
+use an array of `uint8_t`,`uint16_t` or `uint32_t` as underlying data-type utilizing all bits in each word.
 
 ### Current status 
 
@@ -27,7 +27,7 @@ typedef struct
   unsigned int _cit_alloc;
   unsigned int _cit_size;
   CIT_UNIT * _cit_limb;
-};
+}cit;
 ```
 This is public API:
 ```C
