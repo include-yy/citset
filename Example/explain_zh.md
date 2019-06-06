@@ -2,6 +2,8 @@
 
 上[维基](https://zh.wikipedia.org/wiki/%E5%9F%83%E6%8B%89%E6%89%98%E6%96%AF%E7%89%B9%E5%B0%BC%E7%AD%9B%E6%B3%95)看详细解释,维基上不了就安全上网或者vpn，再不济上百毒。
 
+![avatar](https://github.com/include-yy/Graph/blob/master/citset/Sieve_of_Eratosthenes_animation.gif)
+
 ## 引自维基
 
 埃拉托斯特尼筛法（希腊语：κόσκινον Ἐρατοσθένους，英语：sieve of Eratosthenes ），简称埃氏筛，也称素数筛。这是一种简单且历史悠久的筛法，用来找出一定范围内所有的素数。
