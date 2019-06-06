@@ -12,7 +12,7 @@ One of a number of prime number sieves, it is one of the most efficient ways to 
 
 ## My understanding
 
-Suppose we want to find prime numbers under N. As you see, we can use an array of `int` to do this job, if i is a prime, then `a[i]` is set to one, otherwise zero. At first, from 0 to N, all the elements of array is set to 1, and we set `a[0]`, `a[1]` to be zero, because they are not prime numbers. Then, we start at 2, which is a prime number. Because 2 is a prime number, 2 + 2 must not be a prime number, so we set `a[4]` to be 0, 2 + 2 + 2 is not, too, we set `a[6]` to be 0,2 + 2 + 2 + 2 is not....... and so on. When multiples of 2 under N are sorted out, we start at 3,4,5,...... After all these jobs are done, the elements of array remains to be 1 are the prime numbers we want to find. That's how I understand this.
+Suppose we want to find prime numbers under N. As you see, we can use an array of `int` to do this job, if i is a prime, then `a[i]` is set to one, otherwise zero. At first, from 0 to N, all the elements of array is set to 1, and we set `a[0]`, `a[1]` to be zero, because they are not prime numbers. Then, we start at 2, which is a prime number. Because 2 is a prime number, 2 + 2 must not be a prime number, so we set `a[4]` to be 0, 2 + 2 + 2 is not, too, we set `a[6]` to be 0,2 + 2 + 2 + 2 is not....... and so on. When multiples of 2 under N are sorted out, we start to find a a[i] whose value is 1, and we do the same thing on it...... After all these jobs are done, the elements of array remains to be 1 are the prime numbers we want to find. That's how I understand this.
 
 ## Some improvement
 
