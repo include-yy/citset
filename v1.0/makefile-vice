@@ -1,0 +1,35 @@
+CC = gcc
+CFLAGS = -I include -Wall
+
+vpath %.c src
+vpath %.c src/citlimb
+vpath %.c src/citmemall
+vpath %.h include
+
+
+apiobjs := $(patsubst %c, %o, $(notdir $(wildcard src/*.c)))
+limbobjs := $(patsubst %c, %o, $(notdir $(wildcard src/citlimb/*.c)))
+memallobjs := $(patsubst %c, %o, $(notdir $(wildcard src/citmemall/*.c)))
+
+OBJS = $(apiobjs) $(limbobjs) $(memallobjs)
+
+MAIN-TARGET = libcitset.a
+VICE-TARGET = libcitset.so
+
+.PHONY : all
+
+all : $(MAIN-TARGET)
+
+$(MAIN-TARGET) : $(OBJS)
+	ar -rc $@ $^
+
+SHARE : $(OBJS)
+	$(CC) -shared -fPIC -o $(VICE-TARGET) $(OBJS)
+
+%.o : %.c
+	$(CC) -o $@ -c $< $(CFLAGS)
+
+.PHONY : clean
+
+clean : 
+	rm -f $(OBJS)
