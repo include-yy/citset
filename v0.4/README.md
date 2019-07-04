@@ -1,4 +1,4 @@
-# citset
+# citset v0.4
 
 # A Small Implementation of &lt;bitset> in C
 
