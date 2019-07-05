@@ -40,8 +40,3 @@ The time I spend to find the prime number under two million costed me about five
 ## Comparison to C++'s `<bitset>`
 
 In v0.3, the time my code costs is approximately three times more than the C++'s version, but in v0.4, I was surprised that my code is a little faster than C++'s version (about 1.5 times faster). You can try my code in your machine and test the result.
-
-
-  
-
-
