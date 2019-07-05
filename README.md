@@ -8,6 +8,8 @@ Small potable bits manipulation in C.
 
 use an array of `uint8_t`,`uint16_t` , `uint32_t` or `uint64_t` as underlying data-type utilizing all bits in each word.
 
+It is well debugged.
+
 ### Current status 
 
 - basic operations, such as get the value of one bit, modify the value of one bit are well supported.
@@ -21,7 +23,7 @@ The main design goal of this small library is to be small, correct, self contain
 - the default array used by this library is `uint32_t`, if you want to modify it to something else, please go to the header file `cit_def.h` in v1.0/include and change the definition of CIT_WORD_SIZE to 1, 2 or 8(the default value is 4).
 
 ### API
-This is the data-structure used.
+This is the data-structure.
 ```C
 typedef struct
 {
@@ -33,7 +35,7 @@ typedef struct
 typedef cit_in * cit_ptr;
 typedef cit_in cit[1];
 ```
-This is some macros.
+There are some macros.
 ```C
 #define ONE              0X1
 #define ZERO             0X0
@@ -45,7 +47,7 @@ This is some macros.
 #define LEFT             0X0
 #define RIGHT            0X1
 ```
-This is public API:
+There are public APIs:
 ```C
 void citInit(cit_ptr var, uint64_t total, int symbol);
 void citInits(uint64_t total, int symbol, size_t number, cit_ptr lots, ...);
@@ -71,7 +73,11 @@ void citdShow(cit_ptr var, uint64_t start, uint64_t end);
 ```
 
 ### Usage
-Set `CIT_WORD_SIZE`in`citset.h`to {1, 2, 4} to determine the size of WORD_SIZE you use.
+- go to v1.0, run `make` and `make clean` to get the static library `libcitset.a`, if you want the dynamic library, please run `make SHARE` and `make clean` to get `libcitset.so`. 
+- if make doesn't work well, you can try again by using `makefile-vice`. run `make -f makefile-vice` to get `libcitset.a`, and run `make -f makfile-vice SHARE` to get `libcitset.so`.
+- if you want to test them, run `make -f makefile-test` to test them one by one.
+- if you are not on Linux, please use Mingw.
+- if something unexpected happen, please contact me in the Issues.
 
 ### Examples 
 - See [v0.4/tests](https://github.com/include-yy/citset/tree/master/v0.4/tests) for some examples.
