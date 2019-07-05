@@ -16,13 +16,16 @@ It is well debugged.
 - bitwise operation, `and`, `or`, `xor`, `flip`, `shift` are supported.
 
 ### Design goals 
+
 The main design goal of this small library is to be small, correct, self contained. Clarity of the code is highly valued.
 
 ### Notable features and omissions
+
 - the biggest number of bits you can get at a time is 4294967295(0XFFFFFFFF) * 8, delimited by the max value of unsigned int, which is used by malloc().
 - the default array used by this library is `uint32_t`, if you want to modify it to something else, please go to the header file `cit_def.h` in v1.0/include and change the definition of CIT_WORD_SIZE to 1, 2 or 8(the default value is 4).
 
 ### API
+
 This is the data-structure.
 ```C
 typedef struct
@@ -73,6 +76,7 @@ void citdShow(cit_ptr var, uint64_t start, uint64_t end);
 ```
 
 ### Usage
+
 - go to v1.0, run `make` and `make clean` to get the static library `libcitset.a`, if you want the dynamic library, please run `make SHARE` and `make clean` to get `libcitset.so`. 
 - if make doesn't work well, you can try again by using `makefile-vice`. run `make -f makefile-vice` to get `libcitset.a`, and run `make -f makfile-vice SHARE` to get `libcitset.so`.
 - if you want to test them, run `make -f makefile-test` to test them one by one.
@@ -80,7 +84,6 @@ void citdShow(cit_ptr var, uint64_t start, uint64_t end);
 - if something unexpected happen, please contact me in the Issues.
 
 ### Examples 
-- See [v0.4/tests](https://github.com/include-yy/citset/tree/master/v0.4/tests) for some examples.
 - See [Example](https://github.com/include-yy/citset/tree/master/Example) for an example of how to calculate prime numbers by using sieve of Eratosthenes.
 
 ### More Information
