@@ -83,6 +83,7 @@ void citdShow(cit_ptr var, uint64_t start, uint64_t end);
 - if you are not on Linux, please use Mingw.
 - if something unexpected happen, please contact me in the Issues.
 
+(I have put `libcitset.a` and `libcitset.so` in v1.0/lib, if `make` all fail, you can just use them. The header file `citset.h` is in v1.0/include)
 ### Examples 
 - See [Example](https://github.com/include-yy/citset/tree/master/Example) for an example of how to calculate prime numbers by using sieve of Eratosthenes.
 
