@@ -26,7 +26,7 @@ to change the 6th bit of 01110010, we can do these in order.
 - 10000000 & 10000000, now we can get 10000000, then, 
 - we shift 10000000 right 7 bits, so we get 00000001, which is one.
 
-In this example, the second 10000000 used in the second action is called [*Most significant bit*](https://en.wikipedia.org/wiki/Bit_numbering#Most_significant_byte), it can be used to judge the state of one bit. We call is MSB.
+In this example, the second 10000000 used in the second action is called [*Most significant bit*](https://en.wikipedia.org/wiki/Bit_numbering#Most_significant_byte), it can be used to judge the state of one bit. We call it MSB.
 
 Now, we can describe the get operation as below: if we want the nth bit of an unit
 - first, shift unit left (n - 1) bits, 
@@ -63,7 +63,36 @@ bit_index = index % UNITBITS;
 
 ### APIs
 
-Here are some details about public api, which concerns about their definition, use, and hint.
+Here are some details about public api, which concerns about their definition, usage, and hint.
 
+``` C
+void citInit(cit_ptr var, uint64_t total, int symbol);
 ```
+Description:
+
+this function accept three arguments, `var`, `total` and `symbol`.
+
+the argument var's type is cit_ptr, you can declear a variable like this:
+``` C
+cit new;
+```
+the argument `total` means the number of bits you need. It can't be negative.
+
+Note that it can't be bigger than (0XFFFFFFFF) * 8, because of the delimitation of malloc().
+
+the argument `symbol` means the state of each bit, it can be either ONE or ZERO.
+
+Usage:
+
+``` C
+cit new, old;
+citInit(new, 16, ZERO);
+citInit(old, 32, ONE);
+```
+After this statements executed, `new` represents the bit object 0000 0000 0000 0000, and `old` represents 1111 1111 1111 1111 1111 1111 1111 1111.
+
+Hint:
+
+Notice that if `total` is not an integral multiple of CIT_WORD_SIZE * CHAR_BIT(if CIT_WORD_SIZE is 4, the value is 32), the actual allocated memory still be the integral mutiple of this lengthy value.
+
 
