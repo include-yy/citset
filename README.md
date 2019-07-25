@@ -23,6 +23,7 @@ The main design goal of this small library is to be small, correct, self contain
 
 - the biggest number of bits you can get at a time is 4294967295(0XFFFFFFFF) * 8, delimited by the max value of unsigned int, which is used by malloc().
 - the default array used by this library is `uint32_t`, if you want to modify it to something else, please go to the header file `cit_def.h` in v1.0/include and change the definition of CIT_WORD_SIZE to 1, 2 or 8(the default value is 4).
+- gcc 7.3
 
 ### API
 
