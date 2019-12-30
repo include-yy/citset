@@ -86,7 +86,7 @@ void citdShow(cit_ptr var, uint64_t start, uint64_t end);
 
 (I have put `libcitset.a` and `libcitset.so` in v1.0/lib, if `make` all fail, you can just use them. The header file `citset.h` is in v1.0/include)
 ### Examples 
-- See [Example](https://github.com/include-yy/citset/tree/master/Example) for an example of how to find the sum of prime numbers under 10000000 by using sieve of Eratosthenes.
+- See [Example](https://github.com/include-yy/citset/tree/master/v1.0/Example) for an example of how to find the sum of prime numbers under 10000000 by using sieve of Eratosthenes.
 
 ### More Information
 - To get more information about how to use this little library and more details, read the [tutorial](https://github.com/include-yy/citset/blob/master/tutorial.md)
