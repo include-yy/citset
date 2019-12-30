@@ -7,6 +7,7 @@
 
 #include<stdint.h>
 #include<limits.h>
+#include<stddef.h>
 
 #ifndef CIT_WORD_SIZE
   #error Must define CIT_WORD_SIZE to be 1, 2, 4, 8

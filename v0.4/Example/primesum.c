@@ -1,6 +1,6 @@
 #include"citset.h"
 #include<stdio.h>
-#define TAX 1000000
+#define TAX 10000000
 #include<time.h>
 
 void Me(void)

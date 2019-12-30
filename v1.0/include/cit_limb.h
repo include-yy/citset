@@ -1,6 +1,7 @@
 #ifndef _CIT_LIMB_
   #define _CIT_LIMB_
 
+#include <stddef.h>
 void * cit_alloc_limb(size_t size);
 void * cit_realloc_limb(cit_unit_ptr old, size_t size);
 void cit_free_limb(void * p);
