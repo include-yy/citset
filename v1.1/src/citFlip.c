@@ -2,7 +2,7 @@
 
 void citFlip(void * bitfield, size_t start, size_t end)
 {
-    cit_unit * t = bitfield;
+    cit_unit * t = (cit_unit *)bitfield;
     size_t out_s = CIT_OUT_OFFSET(start);
     size_t out_e = CIT_OUT_OFFSET(end);
 
