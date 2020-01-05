@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "cit_def.h"
 
-unsigned char citGetBit(const void * bitfield, size_t index);
+unsigned char (citGetBit)(const void * bitfield, size_t index);
 
 void citShow(const void * bitfield, size_t start, size_t end)
 {

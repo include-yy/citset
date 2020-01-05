@@ -1,6 +1,6 @@
 #include "cit_def.h"
 
-void citSet(void * bitfield, size_t start, size_t end, int symbol)
+void (citSet)(void * bitfield, size_t start, size_t end, int symbol)
 {
     cit_unit * t = (cit_unit *)bitfield;
     size_t out_s = CIT_OUT_OFFSET(start);

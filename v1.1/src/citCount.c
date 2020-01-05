@@ -1,6 +1,6 @@
 #include "cit_def.h"
 
-size_t citCount(const void * bitfield, size_t start, size_t end)
+size_t (citCount)(const void * bitfield, size_t start, size_t end)
 {
     const cit_unit * t = (const cit_unit *)bitfield;
     size_t count = 0;

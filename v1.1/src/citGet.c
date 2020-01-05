@@ -11,7 +11,7 @@ static inline void getit(cit_unit * g,
                          size_t in_gc,
                          size_t in_ge);
 
-void citGet(void * get, void * bitfield, size_t get_s, size_t bit_s, size_t n)
+void (citGet)(void * get, void * bitfield, size_t get_s, size_t bit_s, size_t n)
 {
     if (n == 0)
     {
