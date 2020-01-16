@@ -10,12 +10,12 @@ use an array of `uint8_t`,`uint16_t` , `uint32_t` or `uint64_t` as underlying da
 
 It is well debugged.
 
-### Current status 
+### Current status
 
 - basic operations, such as get the value of one bit, modify the value of one bit are well supported.
 - bitwise operation, `and`, `or`, `xor`, `flip`, `shift` are supported.
 
-### Design goals 
+### Design goals
 
 The main design goal of this small library is to be small, correct, self contained. Clarity of the code is highly valued.
 
@@ -28,6 +28,7 @@ The main design goal of this small library is to be small, correct, self contain
 ### API
 
 This is the data-structure.
+
 ```C
 typedef struct
 {
@@ -39,7 +40,9 @@ typedef struct
 typedef cit_in * cit_ptr;
 typedef cit_in cit[1];
 ```
+
 There are some macros.
+
 ```C
 #define ONE              0X1
 #define ZERO             0X0
@@ -51,7 +54,9 @@ There are some macros.
 #define LEFT             0X0
 #define RIGHT            0X1
 ```
+
 There are public APIs:
+
 ```C
 void citInit(cit_ptr var, uint64_t total, int symbol);
 void citInits(uint64_t total, int symbol, size_t number, cit_ptr lots, ...);
@@ -85,8 +90,11 @@ void citdShow(cit_ptr var, uint64_t start, uint64_t end);
 - if something unexpected happen, please contact me in the Issues.
 
 (I have put `libcitset.a` and `libcitset.so` in v1.0/lib, if `make` all fail, you can just use them. The header file `citset.h` is in v1.0/include)
-### Examples 
+
+### Examples
+
 - See [Example](https://github.com/include-yy/citset/tree/master/v1.0/Example) for an example of how to find the sum of prime numbers under 10000000 by using sieve of Eratosthenes.
 
 ### More Information
+
 - To get more information about how to use this little library and more details, read the [tutorial](https://github.com/include-yy/citset/blob/master/tutorial.md)
