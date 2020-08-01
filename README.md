@@ -67,9 +67,7 @@ I'll illustrate each function and macro's facility at the end of README.
 
 - You can also see some funny examples in `v1.1\test` .
 
-### Going Further
 
-This small library depends heavily on another small library called [citunit](https://github.com/include-yy/citunit), which is also written by me. You can go to see more details about it.
 
 ### Illustration
 
